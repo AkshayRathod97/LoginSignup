@@ -26,6 +26,7 @@ function loginPress(){
     else {
         alert("invalid credentials, Sign Up first !!!")
     }    
+    return false;
 }
 
 function signUpPress(){
@@ -34,4 +35,5 @@ function signUpPress(){
     password = data.elements['inputPassword'].value;
     localStorage.setItem(loginId,password)
     alert("Onboarded !!!")
+    return false;
 }
